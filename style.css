@@ -1,0 +1,385 @@
+body {
+    background-color: #BBCFE1;
+    margin: 0;
+    padding: 0;
+}
+
+.overskrift {
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    position: absolute; /* Tilføj dette for at positionere <p> over billedet */
+    top: 30%; /* Juster for at placere <p> ovenpå billedet */
+    left: 50%; /* Juster for at centrere <p> horisontalt */
+    transform: translate(-50%, -50%); /* Center <p> i forhold til top og left */
+    color: black;
+    font-size: 25px;
+}
+
+.underoverskrift{
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    position: absolute; /* Tilføj dette for at positionere <p> over billedet */
+    top: 65%; /* Juster for at placere <p> ovenpå billedet */
+    left: 50%; /* Juster for at centrere <p> horisontalt */
+    transform: translate(-50%, -50%); /* Center <p> i forhold til top og left */
+    color: black;
+    font-size: 20px;
+
+}
+
+.forside-billede {
+    display: flex;
+    justify-content: center; /* Horisontal centrering */
+    align-items: center;     /* Vertikal centrering */
+    height: 100vh;           /* Gør containeren fuld højde for at demonstrere vertikal centrering */
+    position: relative;      /* Tilføj dette, så <p> kan positioneres relativt til denne container */
+}
+
+img {
+    max-width: 100%;
+    height: 200px;
+}
+
+.scroll-indicator {
+    font-size: 40px;
+    color: black;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: blink 1.5s infinite; /* Øget varighed til 3 sekunder */
+    cursor: pointer;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ommig {
+    background-color: #9EB1C2;
+    width: 100%;
+    height: 830px;
+}
+
+.projekter {
+    background-color: #E88AC2;
+    width: 100%;
+    height: 100px;
+}
+
+.baggrundsfarve{
+height: 700px;
+width: 400px;
+background-color: #BBCFE1;
+z-index: 10;
+position: absolute;
+margin-left: 800px;
+margin-top: 70px;
+}
+
+.baggrundsfarve img{
+
+    width: 400px;
+    height: auto;
+    margin-top: 167px;
+}
+
+.teskt-div{
+height: 400px;
+width: 500px;
+position: absolute;
+margin-top: 300px;
+margin-left: 230px;
+}
+
+.ommig-tekst{
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.ommig-tekst2{
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 600;
+    font-style: italic;
+    color: #E3379F;
+    font-size: 50px;
+}
+
+.ommig-tekst3{
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2;
+}
+
+.projekter p{
+        font-family: "Anonymous Pro", monospace;
+        font-weight: 600;
+        font-style: italic;
+    font-size: 50px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center; /* Centerer horisontalt */
+    align-items: center; /* Centerer vertikalt */
+    height: 100%; /* Eller en fast højde */
+}
+
+.underoverskrift2{
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+}
+
+.socialemedier-tekst{
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2;
+    margin-left: 350px;
+    margin-right: 330px;
+}
+
+.tiktok-billede-div{
+    display: flex;
+    display: flex;
+    justify-content: center; /* Centerer horisontalt */
+    align-items: center; /* Centerer vertikalt */
+    width: 100%;
+}
+
+.billede1{
+height: 500px;
+}
+
+.billede2 {
+    position: absolute;
+    top: 2000px;
+    left: 340px;
+    width: 720px;
+    height: auto;
+    opacity: 0; /* Billedet er skjult som standard */
+    transition: opacity 0.5s ease; /* Giver en glidende overgang */
+}
+
+.tiktok-billede-div:hover .billede2 {
+    opacity: 1; /* Billedet vises ved hover */
+}
+
+.underoverskrift3{
+
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    color:black;
+}
+
+.logo-tiktok{
+margin-left: 500px;
+
+}
+
+.skole-projekter-div{
+height: 1800px;
+width: 100%;
+background-color: #9EB1C2;
+}
+
+.baggrundsfarve-projekter{
+width: 100%;
+height: 100px;
+position: absolute;
+background-color: #E88AC2;
+}
+
+.underoverskrift4{
+    font-family: "Anonymous Pro", monospace;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 50px;
+        letter-spacing: 2px;
+    text-align: center;
+    color:black;
+margin-top: 25px;
+
+}
+
+.underoverskrift5{
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    color:white;
+    display: flex;
+    justify-content: center; /* Centerer horisontalt */
+    align-items: center; /* Centerer vertikalt */
+    display: flex;
+    margin-top: 100px;
+}
+
+.fane{
+    position: absolute;
+margin-left: 200px;
+margin-top: 100px;
+width: 500px;
+height: auto;
+}
+
+.auto-video {
+    width: 426px;
+    height: auto;
+    position: absolute;
+    margin-left: 229px;
+    margin-top: 130px;
+    border-bottom-left-radius: 5px;  /* Runde nederste venstre hjørne */
+    border-bottom-right-radius: 5px; /* Runde nederste højre hjørne */
+    cursor: pointer; /* Skift cursor til hånd, når musen er over videoen */
+}
+
+.tekst-dyrenes{
+height: 270px;
+width: 520px;
+margin-left: 700px;
+margin-top: 110px;
+}
+
+.underoverskrift6{
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    color:#E3379F;
+}
+
+.underoverskrift7{
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2;
+    
+}
+
+.lilleskrift1{
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 7px;
+    position: absolute;
+    margin-top: 117px;
+    margin-left: 410px;
+    z-index: 10;
+}
+
+.kontakt-div{
+    background-color: #E88AC2;
+    width: 100%;
+    height: 100px;
+}
+
+.kontakt-div p{
+    font-family: "Anonymous Pro", monospace;
+        font-weight: 600;
+        font-style: italic;
+    font-size: 50px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center; /* Centerer horisontalt */
+    align-items: center; /* Centerer vertikalt */
+    height: 100%; /* Eller en fast højde */
+}
+
+.kontakt1{
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.kontakt2{
+    text-align: center;
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    margin-top: 10px;
+}
+
+.kontakt-billede{
+    margin-left: 400px;
+    height: 500px;
+    width: auto;
+}
+
+.left-column {
+    width: 100px;
+    position: fixed; /* Fikseret position */
+    top: 50px;
+    right: 20px; /* Ændret fra left: 0 til right: 0 for at placere kolonnen i højre side */
+    padding: 10px;
+    visibility: hidden; /* Skjul kolonnen ved default */
+    opacity: 0; /* Skjul kolonnen ved default */
+    transition: opacity 0.5s ease; /* Blød overgang ved fremvisning */
+    z-index: 20;
+}
+
+/* Kolonnens billeder */
+.left-column img {
+    width: 100%; /* Tilpas billederne til kolonnens bredde */
+    height: auto;
+ 
+
+}
+
+/* Tekst under hvert billede */
+.left-column p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color:white;
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    margin-top: 2px;
+    margin-bottom: 50px;
+}
+
+
+.left-column img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    height: auto;
+}
+
+.left-column div:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+a {
+    text-decoration: none; /* Fjerner stregen under linket */
+}
