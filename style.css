@@ -383,3 +383,15 @@ margin-top: 110px;
 a {
     text-decoration: none; /* Fjerner stregen under linket */
 }
+
+.billeder-container2 {
+    display: flex; /* Aktiver flexbox */
+margin-left: 550px;
+    gap: 30px; /* Afstand mellem billederne */
+    padding: 20px; /* Eventuel padding for plads rundt om */
+}
+
+.billeder-container2 img {
+    max-width: 70px; /* Sæt bredde på billeder */
+    height: auto; /* Bevarer billedets proportioner */
+}
